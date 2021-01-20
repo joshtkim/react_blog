@@ -1,0 +1,49 @@
+{
+    "blogs" : [
+        {
+            "id": 1,
+            "category": "Finance",
+            "title" : "How to Surive in Finance",
+            "slug": "finance-how-to-survive-in-finance",
+            "postedOn": "Dec 30, 2020",
+            "author": "Kelvin Moon",
+            "text": "Finance."
+        },
+        {
+            "id" : 2,
+            "category": "Budgeting",
+            "title": "Save More Spend More",
+            "slug": "budgeting-save-more-spend-more",
+            "postedOn": "Dec 30, 2020",
+            "author": "Kelvin Moon",
+            "text": "Budgeting."
+        },
+        {
+            "id": 3,
+            "category": "Stocks",
+            "title": "The Best Bet",
+            "slug": "stocks-the-best-bet",
+            "postedOn": "Dec 30, 2020",
+            "author": "Joshua Kim",
+            "text": "Stocks."
+        },
+        {
+            "id": 4,
+            "category": "Finance",
+            "title": "Finance 2021",
+            "slug": "finance-finance-2021",
+            "postedOn": "Dec 30, 2020",
+            "author": "Joshua Kim",
+            "text": "Finance."
+        },
+        {
+            "id": 5,
+            "category": "Lifestyle",
+            "title": "Live Your Best",
+            "slug": "lifestyle-live-your-best",
+            "postedOn": "Dec 30, 2020",
+            "author": "Kelvin Moon",
+            "text": "Lifestyle."
+        }
+    ]
+}
