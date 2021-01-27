@@ -7,6 +7,7 @@
             "slug": "finance-how-to-survive-in-finance",
             "postedOn": "Dec 30, 2020",
             "author": "Kelvin Moon",
+            "summary": "finance",
             "text": "Finance."
         },
         {
@@ -16,6 +17,7 @@
             "slug": "budgeting-save-more-spend-more",
             "postedOn": "Dec 30, 2020",
             "author": "Kelvin Moon",
+            "summary": "budgeting",
             "text": "Budgeting."
         },
         {
@@ -25,6 +27,7 @@
             "slug": "stocks-the-best-bet",
             "postedOn": "Dec 30, 2020",
             "author": "Joshua Kim",
+            "summary": "stocks",
             "text": "Stocks."
         },
         {
@@ -34,6 +37,7 @@
             "slug": "finance-finance-2021",
             "postedOn": "Dec 30, 2020",
             "author": "Joshua Kim",
+            "summary": "finance",
             "text": "Finance."
         },
         {
@@ -43,6 +47,7 @@
             "slug": "lifestyle-live-your-best",
             "postedOn": "Dec 30, 2020",
             "author": "Kelvin Moon",
+            "summary": "lifestyle",
             "text": "Lifestyle."
         }
     ]

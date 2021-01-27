@@ -1,3 +1,17 @@
+.blogList {
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.soloPost {
+  display: flex;
+  flex-direction: row;
+}
+
 .blogMap {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #333;
+  width: 15%
 }

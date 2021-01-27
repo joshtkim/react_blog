@@ -16,39 +16,38 @@ function App() {
     title : "" ,
     postedOn: "" ,
     author: "" ,
+    summary: "",
     text: ""
   });
 
-  const [clicked, setClicked] = useState("false")
+  const [clicked, setClicked] = useState(false)
 
   const [slug, setSlug] = useState("")
 
   useEffect(() => {
     let blog = data.blogs.find(blog => blog.slug === slug);
     setBlog(blog)
-    setClicked("true")
-    {console.log(blog)}
   },[slug])
 
   let blogClick=(e) => {
     let slug = e.target.value
+    setClicked(true)
     setSlug(slug)
   }
 
   const blogMap = data.blogs.map(blog => {
     return <div key={blog.id} className="blogMap">
         <p>{blog.title}</p>
-        <p>{blog.author}</p>
-        <button value={blog.slug} onClick={blogClick}>Go To {blog.title}</button>
-        <NavLink to={`/blogs/${blog.slug}`}>blog link</NavLink>
+        <button value={blog.slug} onClick={blogClick}>Info</button>
     </div>
 })
 
 let renderBlogList = () => {
   return(
   <BlogList
-    data={data.blogs}
+    blog={blog}
     blogMap={blogMap}
+    clicked={clicked}
   />
   )
 }
@@ -66,11 +65,10 @@ let renderBlog = () => {
       <div className="App">
         <div>
         <Navbar/>
-          Blog
 
         <Switch>
           <Route path="/blogs" render={() => renderBlogList() } />
-          <Route path="/blogs/:slug"  render={() => renderBlog() }/>
+          <Route path="/post/:slug"  render={() => renderBlog() }/>
         </Switch>
 
         </div>

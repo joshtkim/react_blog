@@ -1,10 +1,22 @@
 import React from 'react'
+import { BrowserRouter as NavLink } from 'react-router-dom';
 
-let BlogList = ({data, blogMap}) => {
+let BlogList = ({blog, blogMap, clicked}) => {
 
     return (
-        <div>
-            {blogMap} 
+        <div className="blogList">
+            {blogMap}
+                <div className="soloPost">
+                    {console.log(clicked)}
+                    {clicked && blog ? 
+                        <div>
+                            <h3>{blog.title}</h3>
+                            <p>{blog.summary}</p>
+                            <NavLink to={`/post/${blog.slug}`}>Go to {blog.title}</NavLink>
+                        </div> 
+                        : 
+                        "Click on a blog for more info!"}
+                </div>
         </div>
     )
 }
