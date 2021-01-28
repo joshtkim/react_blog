@@ -11,6 +11,7 @@ let BlogList = ({blog, blogMap, clicked}) => {
                     {clicked && blog ? 
                         <div>
                             <h3>{blog.title}</h3>
+                            <p>{blog.category}</p>
                             <p>{blog.summary}</p>
                             <NavLink to={`/post/${blog.slug}`}>Go to {blog.title}</NavLink>
                         </div> 
