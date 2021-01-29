@@ -13,7 +13,7 @@ let BlogList = ({blog, blogMap, clicked}) => {
                             <h3>{blog.title}</h3>
                             <p>{blog.category}</p>
                             <p>{blog.summary}</p>
-                            <NavLink to={`/post/${blog.slug}`}>Go to {blog.title}</NavLink>
+                            <NavLink to={`/post/${blog.slug}`}>Go to {blog.title} Page</NavLink>
                         </div> 
                         : 
                         "Click on a blog for more info!"}
