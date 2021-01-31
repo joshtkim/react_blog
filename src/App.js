@@ -38,6 +38,7 @@ function App() {
   const blogMap = data.blogs.map(blog => {
     return <div key={blog.id} className="blogMap">
         <p>{blog.title}</p>
+        <p>{blog.postedOn}</p>
         <button value={blog.slug} onClick={blogClick}>Info</button>
     </div>
 })
