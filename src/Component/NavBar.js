@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 let Navbar = (props) => {
 
@@ -7,7 +7,7 @@ let Navbar = (props) => {
       <div className="navBar">
         <NavLink to="/home">Home</NavLink>
         <NavLink to="/blogs">Blogs</NavLink>
-        <Link to="/about">About</Link>
+        <NavLink to="/about">About</NavLink>
       </div>
     );
 

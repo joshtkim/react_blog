@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as NavLink } from 'react-router-dom';
+import { BrowserRouter as NavLink, Link } from 'react-router-dom';
 
 let BlogList = ({blog, blogMap, clicked}) => {
 
@@ -7,13 +7,11 @@ let BlogList = ({blog, blogMap, clicked}) => {
         <div className="blogList">
             {blogMap}
                 <div className="soloPost">
-                    {console.log(clicked)}
                     {clicked && blog ? 
                         <div>
                             <h3>{blog.title}</h3>
-                            <p>{blog.category}</p>
                             <p>{blog.summary}</p>
-                            <NavLink to={`/post/${blog.slug}`}>Go to {blog.title} Page</NavLink>
+                            <Link to={`/post/${blog.slug}`}>Page</Link>
                         </div> 
                         : 
                         "Click on a blog for more info!"}
