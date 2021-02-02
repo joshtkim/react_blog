@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link, NavLink } from 'react-rou
 
 import BlogList from './Container/BlogList';
 import Blog from './Component/Blog.js'
+import About from './Component/About.js'
 import './App.css'
 
 import data from './Data/data.json'
@@ -61,6 +62,13 @@ let renderBlog = () => {
   )
 }
 
+let renderAbout = () => {
+  return(
+    <About
+    />
+  )
+}
+
   return (
     <Router>
       <div className="App">
@@ -70,6 +78,7 @@ let renderBlog = () => {
         <Switch>
           <Route path="/blogs" render={() => renderBlogList() } />
           <Route path="/post/:slug"  render={() => renderBlog() }/>
+          <Route path="/about" render={() => renderAbout()}/>
         </Switch>
 
         </div>
